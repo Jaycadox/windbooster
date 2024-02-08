@@ -1,22 +1,15 @@
 package me.jayphen.windbooster.mixin;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.FlyingItemEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.projectile.AbstractWindChargeEntity;
 import net.minecraft.entity.projectile.WindChargeEntity;
-import net.minecraft.item.WindChargeItem;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.gen.Accessor;
-import org.spongepowered.asm.mixin.injection.Inject;
 
 @Mixin(WindChargeEntity.class)
-public class WindBlastMixin {
-
+public class WindChargeEntityMixin {
     @Overwrite
     public void createExplosion() {
         var _this = (WindChargeEntity)((Object)this);
