@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "windbooster",
+  "version": "${version}",
+  "name": "windbooster",
+  "description": "",
+  "authors": ["jayphen"],
+  "contact": {
+    "repo": "https://github.com/jayphen/windbooster"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.jayphen.windbooster.client.WindboosterClient"
+    ],
+    "main": [
+      "me.jayphen.windbooster.Windbooster"
+    ]
+  },
+  "mixins": [
+    "windbooster.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "1.20.5-alpha.24.6.a"
+  }
+}
